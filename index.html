@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Rizki</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>KALKULATOR</h1>
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+            <button class="button" onclick="addToDisplay('7')">7</button>
+            <button class="button" onclick="addToDisplay('8')">8</button>
+            <button class="button" onclick="addToDisplay('9')">9</button>
+            <button class="C" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="addToDisplay('4')">4</button>
+            <button class="button" onclick="addToDisplay('5')">5</button>
+            <button class="button" onclick="addToDisplay('6')">6</button>
+            <button class="variabel" onclick="addToDisplay('/')">:</button>
+            <button class="button" onclick="addToDisplay('1')">1</button>
+            <button class="button" onclick="addToDisplay('2')">2</button>
+            <button class="button" onclick="addToDisplay('3')">3</button>
+            <button class="variabel" onclick="addToDisplay('*')">x</button>
+            <button class="button" onclick="addToDisplay('0')">0</button>
+            <button class="variabel" onclick="addToDisplay('.')">.</button>
+            <button class="variabel" onclick="addToDisplay('-')">-</button>
+            <button class="variabel" onclick="addToDisplay('+')">+</button>
+            <button class="apaaja" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script>
+        function addToDisplay(value) {
+            document.getElementById("display").value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = '';
+        }
+
+        function calculate() {
+            try {
+                const result = eval(document.getElementById("display").value);
+                document.getElementById("display").value = result;
+            } catch (error) {
+                document.getElementById("display").value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>

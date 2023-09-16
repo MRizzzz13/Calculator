@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: black;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 10px;
+    background-color: gray;
+
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+   ;
+}
+
+.button {
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color:gray;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: brown;
+}
+h1{
+    font-size: 28px;
+    color: white;
+    border-radius: 5px;
+}
+.apaaja{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color:red;
+    color: black;
+    border-radius: 5px;
+}
+.variabel{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color:gold;
+    color: black;
+    border-radius: 5px;
+}
+.c{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color:aqua;
+    color: black;
+    border-radius: 5px;
+}
